@@ -84,6 +84,5 @@ public class CarDemo {
     // Pris inkl. moms = 100 000 * 1,25
     System.out.printf("Pris inkl. moms: %,.0f kr \n" , c1.price * (1+Car.moms));
 
-
   }
 }
