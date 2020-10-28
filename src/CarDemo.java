@@ -66,10 +66,24 @@ public class CarDemo {
 
     // Övning
     // Skriv ut ägarens förnamn (ej hela namnet)
-
-
     // Utdata:
     // Bilen ägs av Test
+    System.out.println("Bilen ägs av " + c1.owner.firstName );
+
+    c1.owner = p1;
+    System.out.println("Bilen ägs av " + c1.owner.firstName );
+    // Bilen ägs av Mahmud
+
+
+    // Arbeta med klassvariabler (statiska variabler)
+    System.out.println(" ----  Klassvariabler ---- ");
+
+    c1.price = 80000; // Utan moms (exkl. moms)
+    System.out.printf("Pris exkl. moms: %,.0f kr \n", c1.price);
+    System.out.printf("Momssatsen: %.0f%% \n" , Car.moms * 100);
+    // Pris inkl. moms = 100 000 * 1,25
+    System.out.printf("Pris inkl. moms: %,.0f kr \n" , c1.price * (1+Car.moms));
+
 
   }
 }

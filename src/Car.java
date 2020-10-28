@@ -15,4 +15,9 @@ public class Car {
   // En referensvariabel som instansvariabel
   Person owner;  // null
 
+
+  // Klassvariabel
+  public static double moms = 0.25;
+
+
 }
